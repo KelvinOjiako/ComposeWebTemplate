@@ -1,14 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba523397-f152-4e1f-af55-17ff437505e7" name="Changes" comment="" />
+    <list default="true" id="ba523397-f152-4e1f-af55-17ff437505e7" name="Changes" comment="Adding submodules">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ComposeHTML_js_1_0_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/frontEnd_wasm_1_0_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/shared_serverside_1_0_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/shared_wasm_1_0_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ComposeWasm/frontEnd/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ComposeWasm/shared/src/wasmMain/kotlin/Main/wasm.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ComposeHTML/jsFrontEnd/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/ComposeHTML/jsFrontEnd/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ComposeWasm/shared/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/ComposeWasm/shared/build.gradle.kts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/ComposeHTML">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/ComposeWasm">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/ComposeWasm/frontEnd">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/ComposeWasm/shared">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ComposeWasm" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2QqorrsllDaBLYiUe8dEtIGXvOo" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -20,10 +78,21 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/GitHub DeskTop/Templates/ComposeWebTemplate/ComposeWasm",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\GitHub DeskTop\Templates\ComposeWebTemplate" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -32,11 +101,49 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1686090678657</updated>
-      <workItem from="1686090679989" duration="13000" />
+      <workItem from="1686090679989" duration="2796000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial COmpose Web Template">
+      <created>1686091002165</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1686091002165</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Adding submodules">
+      <created>1686092596491</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1686092596491</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Adding submodules">
+      <created>1686092666766</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1686092666766</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial COmpose Web Template" />
+    <MESSAGE value="Adding submodules" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding submodules" />
   </component>
 </project>

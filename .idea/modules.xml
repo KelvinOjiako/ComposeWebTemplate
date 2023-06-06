@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/ComposeWasm.shared.wasmMain.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/ComposeWasm.shared.wasmMain.iml" />
       <module fileurl="file://$PROJECT_DIR$/ComposeWebTemplate.iml" filepath="$PROJECT_DIR$/ComposeWebTemplate.iml" />
     </modules>
   </component>

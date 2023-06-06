@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="frontEnd-wasm-1.0-SNAPSHOT">
+    <output-path>$PROJECT_DIR$/ComposeWasm/frontEnd/build/libs</output-path>
+    <root id="archive" name="frontEnd-wasm-1.0-SNAPSHOT.jar">
+      <element id="module-output" name="ComposeWasm.frontEnd.wasmMain" />
+    </root>
+  </artifact>
+</component>
