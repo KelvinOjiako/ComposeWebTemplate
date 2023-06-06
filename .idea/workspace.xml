@@ -5,19 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba523397-f152-4e1f-af55-17ff437505e7" name="Changes" comment="Adding submodules">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ComposeHTML_js_1_0_SNAPSHOT.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/frontEnd_wasm_1_0_SNAPSHOT.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/shared_serverside_1_0_SNAPSHOT.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/shared_wasm_1_0_SNAPSHOT.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComposeWasm/frontEnd/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComposeWasm/shared/src/wasmMain/kotlin/Main/wasm.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/shared_serverside_1_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/shared_serverside_1_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/shared_wasm_1_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/shared_wasm_1_0_SNAPSHOT.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComposeHTML/jsFrontEnd/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/ComposeHTML/jsFrontEnd/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComposeWasm/shared/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/ComposeWasm/shared/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +69,6 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/GitHub DeskTop/Templates/ComposeWebTemplate/ComposeWasm",
     "node.js.detected.package.eslint": "true",
@@ -101,7 +91,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1686090678657</updated>
-      <workItem from="1686090679989" duration="2796000" />
+      <workItem from="1686090679989" duration="2937000" />
     </task>
     <task id="LOCAL-00001" summary="Initial COmpose Web Template">
       <created>1686091002165</created>
@@ -124,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686092666766</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Adding submodules">
+      <created>1686093592523</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1686093592523</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

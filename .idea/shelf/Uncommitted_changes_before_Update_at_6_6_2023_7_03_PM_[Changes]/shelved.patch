@@ -1,0 +1,4 @@
+diff --git a/ComposeHTML/jsFrontEnd/build.gradle.kts b/ComposeHTML/jsFrontEnd/build.gradle.kts
+new file mode 100644
+diff --git a/ComposeHTML/shared/build.gradle.kts b/ComposeHTML/shared/build.gradle.kts
+new file mode 100644
