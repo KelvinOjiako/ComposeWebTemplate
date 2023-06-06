@@ -1,40 +1,31 @@
 plugins {
-    kotlin("multiplatform")
-    id("org.jetbrains.compose")
+    // this is necessary to avoid the plugins to be loaded multiple times
+    // in each subproject's classloader
+    kotlin("jvm") apply false
+    kotlin("multiplatform") apply false
+    kotlin("js") apply false
+    id("org.jetbrains.compose") apply false
 }
 
-group = "com.sampleTemplate"
-version = "1.0-SNAPSHOT"
-
-repositories {
-    google()
-    mavenCentral()
-    maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
-}
-
-kotlin {
-    js(IR) {
-        browser {
-            testTask {
-                testLogging.showStandardStreams = true
-                useKarma {
-                    useChromeHeadless()
-                    useFirefox()
-                }
-            }
-        }
-        binaries.executable()
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
+        mavenLocal()
+        maven("https://maven.pkg.jetbrains.space/kotlin/p/wasm/experimental")
     }
-    sourceSets {
-        val jsMain by getting {
-            dependencies {
-                implementation(compose.web.core)
-                implementation(compose.runtime)
-            }
-        }
-        val jsTest by getting {
-            dependencies {
-                implementation(kotlin("test-js"))
+
+    configurations.all {
+        val conf = this
+        // Currently it's necessary to make the android build work properly
+        conf.resolutionStrategy.eachDependency {
+            val isWasm = conf.name.contains("wasm", true)
+            val isJs = conf.name.contains("js", true)
+            val isComposeGroup = requested.module.group.startsWith("org.jetbrains.compose")
+            val isComposeCompiler = requested.module.group.startsWith("org.jetbrains.compose.compiler")
+            if (isComposeGroup && !isComposeCompiler && !isWasm && !isJs) {
+                useVersion("1.4.0")
             }
         }
     }
