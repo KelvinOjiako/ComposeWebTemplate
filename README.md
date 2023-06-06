@@ -1,4 +1,3 @@
 # ComposeWebTemplate
 
-Web Template for working on a COmpose Multiplatform Web Application. It only includes the web components and shows setup using Kotlin wasm runtime
-and also shows a setup with the Kotlin-j runtime.
+Template for Compose Multiplatform Web, A Declarative UI Framework for Sharing UI's across Mutliple Devices. Includes a module with a template for using COmpose Web with the Kotlin js compiler (the old compose web is now composeHTML) and another for using the framework with the kotlin wasm compiler.
