@@ -3,6 +3,7 @@
   <component name="AdditionalModuleElements">
     <content url="file://$MODULE_DIR$/../../../ComposeHTML/jsFrontEnd/src/jsMain" dumb="true">
       <sourceFolder url="file://$MODULE_DIR$/../../../ComposeHTML/jsFrontEnd/src/jsMain/kotlin" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../ComposeHTML/jsFrontEnd/src/jsMain/resources" type="java-resource" />
     </content>
   </component>
 </module>
