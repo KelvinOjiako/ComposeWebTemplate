@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba523397-f152-4e1f-af55-17ff437505e7" name="Changes" comment="composeHTML module additions">
-      <change afterPath="$PROJECT_DIR$/ComposeHTML/jsFrontEnd/src/jsMain/resources/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComposeHTML/jsFrontEnd/src/jsMain/resources/load.mjs" afterDir="false" />
+    <list default="true" id="ba523397-f152-4e1f-af55-17ff437505e7" name="Changes" comment="composeHTML module edits">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ComposeHTML/shared/src/jsMain/kotlin/AppBuilder.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ComposeHTML/shared/src/jsMain/kotlin/components/HomeComponent.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ComposeHTML/shared/src/jsMain/kotlin/components/ProfileComponent.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ComposeHTML/shared/src/jsMain/kotlin/components/userProfile.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/shared_js.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/shared_js.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/jsFrontEnd/ComposeHTML.jsFrontEnd.jsMain.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComposeHTML/jsFrontEnd/src/jsMain/kotlin/Main,kt.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ComposeHTML/jsFrontEnd/src/jsMain/kotlin/Main,kt.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ComposeHTML/jsFrontEnd/src/jsMain/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ComposeHTML/jsFrontEnd/src/jsMain/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ComposeHTML/shared/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/ComposeHTML/shared/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,9 +63,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin File" />
         <option value="Kotlin Class" />
         <option value="HTML File" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -97,6 +104,7 @@
       <recent name="C:\GitHub DeskTop\Templates\ComposeWebTemplate" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\GitHub DeskTop\Templates\ComposeWebTemplate\ComposeHTML\shared\src\commonMain\kotlin" />
       <recent name="C:\GitHub DeskTop\Templates\ComposeWebTemplate\ComposeWasm\frontEnd\src\wasmMain\kotlin\coreComponents" />
     </key>
   </component>
@@ -158,7 +166,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1686090678657</updated>
-      <workItem from="1686090679989" duration="6832000" />
+      <workItem from="1686090679989" duration="11268000" />
     </task>
     <task id="LOCAL-00001" summary="Initial COmpose Web Template">
       <created>1686091002165</created>
@@ -202,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686097549146</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="composeHTML module edits">
+      <created>1686098437139</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1686098437139</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,6 +238,7 @@
     <MESSAGE value="Initial COmpose Web Template" />
     <MESSAGE value="Adding submodules" />
     <MESSAGE value="composeHTML module additions" />
-    <option name="LAST_COMMIT_MESSAGE" value="composeHTML module additions" />
+    <MESSAGE value="composeHTML module edits" />
+    <option name="LAST_COMMIT_MESSAGE" value="composeHTML module edits" />
   </component>
 </project>

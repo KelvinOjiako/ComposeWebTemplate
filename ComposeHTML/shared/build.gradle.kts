@@ -9,10 +9,6 @@ kotlin {
     js(IR) {
         browser()
     }
-
-    // JVM
-    jvm("desktop")
-
     sourceSets {
         // COMMON
         val commonMain by getting {
