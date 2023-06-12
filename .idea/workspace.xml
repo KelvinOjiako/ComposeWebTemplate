@@ -4,18 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba523397-f152-4e1f-af55-17ff437505e7" name="Changes" comment="composeHTML module edits">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComposeHTML/shared/src/jsMain/kotlin/AppBuilder.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComposeHTML/shared/src/jsMain/kotlin/components/HomeComponent.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComposeHTML/shared/src/jsMain/kotlin/components/ProfileComponent.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ComposeHTML/shared/src/jsMain/kotlin/components/userProfile.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/shared_js.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/shared_js.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/jsFrontEnd/ComposeHTML.jsFrontEnd.jsMain.iml" beforeDir="false" />
+    <list default="true" id="ba523397-f152-4e1f-af55-17ff437505e7" name="Changes" comment="composeHTML module edits =&gt; Routing functionality">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ComposeHTML/jsFrontEnd/src/jsMain/kotlin/PreComposeBrowserViewPort.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ComposeHTML/shared/src/jsMain/kotlin/Wrappers/BrowserViewPortCanvasResize.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ComposeHTML/shared/src/jsMain/kotlin/components/App.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ComposeHTML/shared/src/jsMain/kotlin/components/NavigationComponent/NavigationBar.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ComposeHTML/shared/src/jsMain/kotlin/components/componentImpl/HomeComponentImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ComposeHTML/shared/src/jsMain/kotlin/components/componentImpl/ProfileComponentImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ComposeHTML/shared/src/jsMain/kotlin/components/componentImpl/RootContent.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ComposeHTML/shared/src/jsMain/kotlin/components/componentImpl/SignInComponentImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ComposeHTML/shared/src/jsMain/kotlin/components/componentImpl/SignUpComponentImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ComposeHTML/shared/src/jsMain/kotlin/components/interfaces/HomeComponent.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ComposeHTML/shared/src/jsMain/kotlin/components/interfaces/IndexComponent.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ComposeHTML/shared/src/jsMain/kotlin/components/interfaces/ProfileComponent.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ComposeHTML/shared/src/jsMain/kotlin/components/interfaces/RootComponent.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ComposeHTML/shared/src/jsMain/kotlin/components/interfaces/SignInComponent.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ComposeHTML/shared/src/jsMain/kotlin/components/interfaces/SignUpComponent.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/shared/ComposeHTML.shared.commonMain.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ComposeHTML/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ComposeHTML/gradle.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ComposeHTML/jsFrontEnd/src/jsMain/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ComposeHTML/jsFrontEnd/src/jsMain/kotlin/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ComposeHTML/shared/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/ComposeHTML/shared/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ComposeHTML/shared/src/jsMain/kotlin/AppBuilder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ComposeHTML/shared/src/jsMain/kotlin/AppBuilder.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ComposeHTML/shared/src/jsMain/kotlin/components/HomeComponent.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ComposeHTML/shared/src/jsMain/kotlin/components/ProfileComponent.kt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,9 +78,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Class" />
         <option value="HTML File" />
         <option value="Kotlin File" />
+        <option value="Kotlin Interface" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -83,29 +99,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "ktor.last.update.timestamp": "1686097373392",
-    "last_opened_file_path": "C:/GitHub DeskTop/Templates/ComposeWebTemplate/ComposeHTML",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;ktor.last.update.timestamp&quot;: &quot;1686309338577&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/GitHub DeskTop/Templates/ComposeWebTemplate/ComposeHTML&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\GitHub DeskTop\Templates\ComposeWebTemplate" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\GitHub DeskTop\Templates\ComposeWebTemplate\ComposeHTML\shared\src\jsMain\kotlin\components\interfaces" />
       <recent name="C:\GitHub DeskTop\Templates\ComposeWebTemplate\ComposeHTML\shared\src\commonMain\kotlin" />
       <recent name="C:\GitHub DeskTop\Templates\ComposeWebTemplate\ComposeWasm\frontEnd\src\wasmMain\kotlin\coreComponents" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="components.interfaces" />
+      <recent name="components.componentImpl" />
     </key>
   </component>
   <component name="RunManager" selected="Gradle.ComposeJS">
@@ -166,7 +187,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1686090678657</updated>
-      <workItem from="1686090679989" duration="11268000" />
+      <workItem from="1686090679989" duration="22714000" />
+      <workItem from="1686353235962" duration="8345000" />
+      <workItem from="1686556381843" duration="7302000" />
     </task>
     <task id="LOCAL-00001" summary="Initial COmpose Web Template">
       <created>1686091002165</created>
@@ -217,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686098437139</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="composeHTML module edits =&gt; Routing functionality">
+      <created>1686102867447</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1686102867447</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,6 +269,7 @@
     <MESSAGE value="Adding submodules" />
     <MESSAGE value="composeHTML module additions" />
     <MESSAGE value="composeHTML module edits" />
-    <option name="LAST_COMMIT_MESSAGE" value="composeHTML module edits" />
+    <MESSAGE value="composeHTML module edits =&gt; Routing functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="composeHTML module edits =&gt; Routing functionality" />
   </component>
 </project>

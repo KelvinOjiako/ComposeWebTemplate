@@ -12,9 +12,8 @@ import com.pablichj.templato.component.core.Component
 import com.pablichj.templato.component.core.NavItem
 import com.pablichj.templato.component.core.navbar.NavBarComponent
 import com.pablichj.templato.component.core.setNavItems
-import components.HomeComponent
-import components.ProfileComponent
-import components.UserProfile
+import components.interfaces.HomeComponent
+import components.interfaces.ProfileComponent
 
 object AppBuilder {
 
