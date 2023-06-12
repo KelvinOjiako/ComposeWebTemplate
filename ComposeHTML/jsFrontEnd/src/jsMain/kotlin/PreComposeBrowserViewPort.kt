@@ -4,13 +4,10 @@
         "EXPOSED_PARAMETER_TYPE"
 )
 
-package Wrappers
-
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.window.ComposeWindow
 import kotlinx.browser.document
 import kotlinx.browser.window
-import moe.tlaster.precompose.preComposeWindow
 import org.w3c.dom.HTMLCanvasElement
 import org.w3c.dom.HTMLStyleElement
 import org.w3c.dom.HTMLTitleElement
@@ -69,9 +66,7 @@ fun BrowserViewportWindowCanvasResizePreCompose(
         htmlTitleElement.textContent = title
 
         setContent {
-            preComposeWindow(title = title){
-                content(this)
-            }
+            content(this)
         }
     }
 
