@@ -4,7 +4,7 @@ import com.arkivanov.decompose.router.stack.ChildStack
 import com.arkivanov.decompose.value.Value
 
 interface RootComponent {
-    val pagesStack: Value<ChildStack<*, Pages>>
+    val RootpagesStack: Value<ChildStack<*, Pages>>
 
     sealed class Pages {
         data class IndexPage(val component: IndexComponent) : Pages()
@@ -15,4 +15,9 @@ interface RootComponent {
         data class ProfilePage(val component: ProfileComponent) : Pages()
 
     }
+
+    fun onHomeLinkPressed()
+    fun onProfileLinkPressed()
+    fun onSignUpLinkPressed()
+    fun onSignInLinkPressed()
 }

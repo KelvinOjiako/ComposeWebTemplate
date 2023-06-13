@@ -12,12 +12,10 @@ import components.componentImpl.SignUpComponentImpl
 import components.interfaces.RootComponent
 
 @Composable
-fun NavigationBar(componentStack: StackNavigation<RootComponent.Pages>){
+fun NavigationBar(component: RootComponent){
     Row {
-        componentStack.push(RootComponent.Pages.SignUpPage(SignUpComponentImpl()))
-
-        TextButton(onClick = { componentStack.push(RootComponent.Pages.HomePage(HomeComponentImpl())) }){Text("home") }
-        TextButton(onClick = { componentStack.push(RootComponent.Pages.SignUpPage(SignUpComponentImpl())) }){Text("SignUp") }
-        TextButton(onClick = { componentStack.push(RootComponent.Pages.ProfilePage(ProfileComponentImpl()))  }){Text("profile") }
+        TextButton(onClick = { component.onHomeLinkPressed() }){Text("home") }
+        TextButton(onClick = { component.onSignUpLinkPressed() }){Text("SignUp") }
+        TextButton(onClick = { component.onProfileLinkPressed()  }){Text("profile") }
     }
 }
