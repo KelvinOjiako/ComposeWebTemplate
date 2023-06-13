@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ba523397-f152-4e1f-af55-17ff437505e7" name="Changes" comment=" Finalized routing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComposeHTML/jsFrontEnd/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/ComposeHTML/jsFrontEnd/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ComposeHTML/jsFrontEnd/src/jsMain/resources/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ComposeHTML/jsFrontEnd/src/jsMain/resources/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +185,7 @@
       <workItem from="1686353235962" duration="8345000" />
       <workItem from="1686556381843" duration="7302000" />
       <workItem from="1686607377897" duration="974000" />
-      <workItem from="1686643483345" duration="611000" />
+      <workItem from="1686643483345" duration="5066000" />
     </task>
     <task id="LOCAL-00001" summary="Initial COmpose Web Template">
       <created>1686091002165</created>
@@ -257,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686643918811</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary=" Finalized routing">
+      <created>1686644582366</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1686644582374</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
