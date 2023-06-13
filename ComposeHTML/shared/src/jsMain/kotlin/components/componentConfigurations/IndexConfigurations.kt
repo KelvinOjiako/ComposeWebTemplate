@@ -10,4 +10,4 @@ import com.arkivanov.essenty.statekeeper.StateKeeper
      val title: String = "Home",
      val message: String = "Welcome to the app",
 
-): ComponentContext
+)

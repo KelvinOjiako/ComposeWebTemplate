@@ -4,14 +4,16 @@ package components.componentImpl
 import com.arkivanov.decompose.router.stack.ChildStack
 import com.arkivanov.decompose.value.MutableValue
 import com.arkivanov.decompose.value.Value
+import components.componentConfigurations.IndexConfigurations
+import components.interfaces.IndexComponent
 import components.interfaces.RootComponent
 
 class RootContent() : RootComponent {
 
     private val _pageStack = MutableValue(
         ChildStack(
-            configuration = ,
-            instance = ,
+            configuration = IndexConfigurations() ,
+            instance = IndexComponentImpl(),
         )
     )
     override val RootpagesStack: Value<ChildStack<*, RootComponent.Pages>>
