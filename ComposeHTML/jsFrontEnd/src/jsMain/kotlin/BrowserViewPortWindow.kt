@@ -15,7 +15,7 @@ import org.w3c.dom.HTMLTitleElement
 private const val CANVAS_ELEMENT_ID = "ComposeTarget" // Hardwired into ComposeWindow
 
 
-fun BrowserViewportWindowCanvasResizePreCompose(
+fun BrowserViewportWindowCanvasResize(
         title: String = "Untitled",
         content: @Composable ComposeWindow.() -> Unit
 ) {
