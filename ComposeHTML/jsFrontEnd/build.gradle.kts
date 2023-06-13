@@ -30,7 +30,6 @@ compose.experimental {
 
 afterEvaluate {
     rootProject.extensions.configure<NodeJsRootExtension> {
-        versions.webpackDevServer.version = "5.0.0"
         versions.webpackCli.version = "4.10.0"
     }
 }
