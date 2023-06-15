@@ -19,8 +19,8 @@ kotlin {
                 implementation(compose.runtime)
                 api(compose.animation)
 
-                implementation("com.arkivanov.decompose:decompose-js:2.1.0-compose-experimental-alpha-02")
-                implementation("com.arkivanov.decompose:extensions-compose-jetbrains-js:2.1.0-compose-experimental-alpha-02")
+                implementation("com.arkivanov.decompose:decompose:2.1.0-compose-experimental-alpha-02")
+                implementation("com.arkivanov.decompose:extensions-compose-jetbrains:2.1.0-compose-experimental-alpha-02")
             }
         }
         val commonTest by getting {

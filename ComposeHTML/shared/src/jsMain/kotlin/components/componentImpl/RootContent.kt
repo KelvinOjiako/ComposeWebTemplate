@@ -51,7 +51,7 @@ class RootComponentImpl(componentContext: ComponentContext,
            // PageConfig.Index -> TODO()
             PageConfig.Profile -> RootComponent.Pages.ProfilePage(ProfileComponentImpl())
            // PageConfig.Settings -> TODO()
-            PageConfig.SignIn -> RootComponent.Pages.SignInPage(SignInComponentImpl())
+            PageConfig.SignIn -> RootComponent.Pages.SignInPage(SignInComponentImpl(componentContext))
             PageConfig.SignUp -> RootComponent.Pages.SignUpPage(SignUpComponentImpl())
 
             else -> RootComponent.Pages.IndexPage(IndexComponentImpl())

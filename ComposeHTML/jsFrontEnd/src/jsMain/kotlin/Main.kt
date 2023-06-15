@@ -12,8 +12,6 @@ import kotlinx.browser.document
 import kotlinx.browser.window
 import org.jetbrains.skiko.wasm.onWasmReady
 
-
-
 @OptIn(ExperimentalDecomposeApi::class)
 fun main() {
 
