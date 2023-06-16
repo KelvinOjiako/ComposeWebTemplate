@@ -2,10 +2,10 @@ package components.NavigationComponent
 
 import com.arkivanov.decompose.router.stack.ChildStack
 import com.arkivanov.decompose.value.Value
-import components.interfaces.RootComponent
+import components.interfaces.RootModel
 
 interface NavigationComponent {
-    val pagesStack: Value<ChildStack<*, RootComponent.Pages>>
+    val pagesStack: Value<ChildStack<*, RootModel.Pages>>
 
     fun onHomeLinkPressed()
     fun onProfileLinkPressed()

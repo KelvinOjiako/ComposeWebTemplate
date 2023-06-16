@@ -1,4 +1,4 @@
-package components.composables
+package ui
 
 import androidx.compose.runtime.Composable
 

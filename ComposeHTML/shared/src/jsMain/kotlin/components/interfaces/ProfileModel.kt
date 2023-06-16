@@ -1,4 +1,6 @@
 package components.interfaces
 
-interface IndexComponent {
+
+interface ProfileModel  {
+
 }

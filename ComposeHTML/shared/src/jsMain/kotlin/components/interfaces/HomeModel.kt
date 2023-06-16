@@ -2,9 +2,8 @@ package components.interfaces
 
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
-import components.interfaces.RootComponent
 
-interface HomeComponent{
+interface HomeModel{
 
 
 }
