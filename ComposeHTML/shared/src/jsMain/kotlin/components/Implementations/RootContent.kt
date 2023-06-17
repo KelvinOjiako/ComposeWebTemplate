@@ -1,4 +1,4 @@
-package components.componentImpl
+package components.Implementations
 
 import com.arkivanov.decompose.ComponentContext
 import com.arkivanov.decompose.ExperimentalDecomposeApi
@@ -8,13 +8,12 @@ import com.arkivanov.decompose.router.stack.childStack
 import com.arkivanov.decompose.router.stack.webhistory.WebHistoryController
 import com.arkivanov.essenty.parcelable.Parcelable
 import com.arkivanov.essenty.parcelable.Parcelize
-
-import components.interfaces.RootComponent
+import components.interfaces.RootModel
 
 @OptIn(ExperimentalDecomposeApi::class)
-class RootComponentImpl(componentContext: ComponentContext,
-                  deepLink: DeepLink = DeepLink.None,
-                  webHistoryController: WebHistoryController? = null) : RootComponent, ComponentContext by componentContext {
+class RootModelImpl(componentContext: ComponentContext,
+                    deepLink: DeepLink = DeepLink.None,
+                    webHistoryController: WebHistoryController? = null) : RootModel, ComponentContext by componentContext {
 
     private val navigation = StackNavigation<PageConfig>()
 
@@ -35,17 +34,19 @@ class RootComponentImpl(componentContext: ComponentContext,
         )
     }
 
-    private fun child(pageConfig: PageConfig, componentContext: ComponentContext): RootComponent.Pages =
+
+
+    private fun child(pageConfig: PageConfig, componentContext: ComponentContext): RootModel.Pages =
         when(pageConfig){
            // PageConfig.About -> TODO()
-            PageConfig.Home -> RootComponent.Pages.HomePage(HomeComponentImpl())
+            PageConfig.Home -> RootModel.Pages.HomePage(HomeComponentImpl())
            // PageConfig.Index -> TODO()
-            PageConfig.Profile -> RootComponent.Pages.ProfilePage(ProfileComponentImpl())
+            PageConfig.Profile -> RootModel.Pages.ProfilePage(ProfileModelImpl())
            // PageConfig.Settings -> TODO()
-            PageConfig.SignIn -> RootComponent.Pages.SignInPage(SignInComponentImpl(componentContext))
-            PageConfig.SignUp -> RootComponent.Pages.SignUpPage(SignUpComponentImpl())
+            PageConfig.SignIn -> RootModel.Pages.SignInPage(LoginComponent(componentContext))
+            PageConfig.SignUp -> RootModel.Pages.SignUpPage(SignUpModelImpl())
 
-            else -> RootComponent.Pages.IndexPage(IndexComponentImpl())
+            else -> RootModel.Pages.IndexPage(IndexModelImpl())
         }
 
     override fun onHomeLinkPressed() {
@@ -63,6 +64,8 @@ class RootComponentImpl(componentContext: ComponentContext,
     override fun onSignInLinkPressed() {
         navigation.bringToFront(PageConfig.SignIn)
     }
+
+
 
     private companion object{
         private const val WEB_PATH_HOME = "home"
@@ -100,6 +103,8 @@ class RootComponentImpl(componentContext: ComponentContext,
 
                 else -> PageConfig.Index
             }
+
+
     }
 
     sealed interface PageConfig: Parcelable{

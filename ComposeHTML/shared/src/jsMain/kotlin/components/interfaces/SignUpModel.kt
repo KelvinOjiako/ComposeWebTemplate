@@ -1,4 +1,4 @@
 package components.interfaces
 
-interface SignUpComponent {
+interface SignUpModel {
 }

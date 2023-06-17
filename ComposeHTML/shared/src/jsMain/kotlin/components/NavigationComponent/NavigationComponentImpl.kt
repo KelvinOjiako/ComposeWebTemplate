@@ -2,10 +2,10 @@ package components.NavigationComponent
 
 import com.arkivanov.decompose.router.stack.ChildStack
 import com.arkivanov.decompose.value.Value
-import components.interfaces.RootComponent
+import components.interfaces.RootModel
 
 class NavigationComponentImpl: NavigationComponent {
-    override val pagesStack: Value<ChildStack<*, RootComponent.Pages>>
+    override val pagesStack: Value<ChildStack<*, RootModel.Pages>>
         get() = TODO("Not yet implemented")
 
     override fun onHomeLinkPressed() {

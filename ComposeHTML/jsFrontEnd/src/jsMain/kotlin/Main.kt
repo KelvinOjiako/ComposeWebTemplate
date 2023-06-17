@@ -5,10 +5,8 @@ import com.arkivanov.decompose.ExperimentalDecomposeApi
 import com.arkivanov.decompose.router.stack.webhistory.DefaultWebHistoryController
 import com.arkivanov.essenty.lifecycle.LifecycleRegistry
 import com.arkivanov.essenty.lifecycle.resume
-import com.arkivanov.essenty.lifecycle.stop
-import components.componentImpl.RootComponentImpl
-import components.composables.RootContentComposable
-import kotlinx.browser.document
+import components.Implementations.RootModelImpl
+import ui.RootContentComposable
 import kotlinx.browser.window
 import org.jetbrains.skiko.wasm.onWasmReady
 
@@ -17,8 +15,8 @@ fun main() {
 
     val lifecycle = LifecycleRegistry()
 
-    val root = RootComponentImpl(componentContext = DefaultComponentContext(lifecycle = lifecycle),
-        deepLink = RootComponentImpl.DeepLink.Web(path = window.location.pathname),
+    val root = RootModelImpl(componentContext = DefaultComponentContext(lifecycle = lifecycle),
+        deepLink = RootModelImpl.DeepLink.Web(path = window.location.pathname),
         webHistoryController = DefaultWebHistoryController()
     )
 
