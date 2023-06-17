@@ -1,21 +1,14 @@
 package components.componentImpl
 
-//import com.arkivanov.decompose.router.stack.ChildStack
-import androidx.compose.runtime.sourceInformation
 import com.arkivanov.decompose.ComponentContext
 import com.arkivanov.decompose.ExperimentalDecomposeApi
-import com.arkivanov.decompose.router.stack.ChildStack
 import com.arkivanov.decompose.router.stack.StackNavigation
 import com.arkivanov.decompose.router.stack.bringToFront
 import com.arkivanov.decompose.router.stack.childStack
 import com.arkivanov.decompose.router.stack.webhistory.WebHistoryController
-import com.arkivanov.decompose.value.MutableValue
-import com.arkivanov.decompose.value.Value
 import com.arkivanov.essenty.parcelable.Parcelable
 import com.arkivanov.essenty.parcelable.Parcelize
-import components.componentConfigurations.IndexConfigurations
-import components.interfaces.HomePage
-import components.interfaces.IndexComponent
+
 import components.interfaces.RootComponent
 
 @OptIn(ExperimentalDecomposeApi::class)
@@ -41,8 +34,6 @@ class RootComponentImpl(componentContext: ComponentContext,
             getConfiguration = ::getConfigForPath,
         )
     }
-
-
 
     private fun child(pageConfig: PageConfig, componentContext: ComponentContext): RootComponent.Pages =
         when(pageConfig){
@@ -72,8 +63,6 @@ class RootComponentImpl(componentContext: ComponentContext,
     override fun onSignInLinkPressed() {
         navigation.bringToFront(PageConfig.SignIn)
     }
-
-
 
     private companion object{
         private const val WEB_PATH_HOME = "home"
@@ -111,8 +100,6 @@ class RootComponentImpl(componentContext: ComponentContext,
 
                 else -> PageConfig.Index
             }
-
-
     }
 
     sealed interface PageConfig: Parcelable{
