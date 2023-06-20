@@ -4,7 +4,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.material.Text
 import androidx.compose.material.TextButton
 import androidx.compose.runtime.Composable
-import components.interfaces.RootModel
+import components.root.RootModel
 
 @Composable
 fun NavigationBar(component: RootModel){

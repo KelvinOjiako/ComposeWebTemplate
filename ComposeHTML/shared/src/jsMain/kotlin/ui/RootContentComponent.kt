@@ -6,7 +6,7 @@ import androidx.compose.runtime.getValue
 import com.arkivanov.decompose.extensions.compose.jetbrains.stack.Children
 import com.arkivanov.decompose.extensions.compose.jetbrains.subscribeAsState
 import components.NavigationComponent.NavigationBar
-import components.interfaces.RootModel
+import components.root.RootModel
 
 @Composable
 fun RootContentComposable(rootModel: RootModel){

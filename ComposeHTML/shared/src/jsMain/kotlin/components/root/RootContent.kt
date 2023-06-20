@@ -1,4 +1,4 @@
-package components.Implementations
+package components.root
 
 import com.arkivanov.decompose.ComponentContext
 import com.arkivanov.decompose.ExperimentalDecomposeApi
@@ -8,7 +8,7 @@ import com.arkivanov.decompose.router.stack.childStack
 import com.arkivanov.decompose.router.stack.webhistory.WebHistoryController
 import com.arkivanov.essenty.parcelable.Parcelable
 import com.arkivanov.essenty.parcelable.Parcelize
-import components.interfaces.RootModel
+import components.Implementations.*
 
 @OptIn(ExperimentalDecomposeApi::class)
 class RootModelImpl(componentContext: ComponentContext,
@@ -29,8 +29,8 @@ class RootModelImpl(componentContext: ComponentContext,
         webHistoryController?.attach(
             navigator = navigation,
             stack = pageStack,
-            getPath = ::getPathForConfig,
-            getConfiguration = ::getConfigForPath,
+            getPath = Companion::getPathForConfig,
+            getConfiguration = Companion::getConfigForPath,
         )
     }
 
@@ -39,14 +39,14 @@ class RootModelImpl(componentContext: ComponentContext,
     private fun child(pageConfig: PageConfig, componentContext: ComponentContext): RootModel.Pages =
         when(pageConfig){
            // PageConfig.About -> TODO()
-            PageConfig.Home -> RootModel.Pages.HomePage(HomeComponentImpl())
+            PageConfig.Home -> RootModel.Pages.HomePage(HomeComponent())
            // PageConfig.Index -> TODO()
-            PageConfig.Profile -> RootModel.Pages.ProfilePage(ProfileModelImpl())
+            PageConfig.Profile -> RootModel.Pages.ProfilePage(ProfileComponent())
            // PageConfig.Settings -> TODO()
             PageConfig.SignIn -> RootModel.Pages.SignInPage(LoginComponent(componentContext))
-            PageConfig.SignUp -> RootModel.Pages.SignUpPage(SignUpModelImpl())
+            PageConfig.SignUp -> RootModel.Pages.SignUpPage(SignUpComponent())
 
-            else -> RootModel.Pages.IndexPage(IndexModelImpl())
+            else -> RootModel.Pages.IndexPage(IndexComponent())
         }
 
     override fun onHomeLinkPressed() {
@@ -96,7 +96,7 @@ class RootModelImpl(componentContext: ComponentContext,
         private fun getConfigForPath(path: String): PageConfig =
             when (path.removePrefix("/")) {
                 WEB_PATH_HOME -> PageConfig.Home
-                WEB_PATH_SETTINGS-> PageConfig.Settings
+                WEB_PATH_SETTINGS -> PageConfig.Settings
                 WEB_PATH_PROFILE -> PageConfig.Profile
                 WEB_PATH_SIGNIN -> PageConfig.SignIn
                 WEB_PATH_SIGNUP -> PageConfig.SignUp

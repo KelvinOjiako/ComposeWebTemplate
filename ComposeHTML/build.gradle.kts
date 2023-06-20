@@ -8,6 +8,7 @@ plugins {
     kotlin("multiplatform") apply false
     kotlin("js") apply false
     id("org.jetbrains.compose") apply false
+    kotlin("plugin.serialization") apply false
 }
 
 allprojects {

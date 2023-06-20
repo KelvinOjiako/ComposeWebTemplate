@@ -5,7 +5,7 @@ import com.arkivanov.decompose.ExperimentalDecomposeApi
 import com.arkivanov.decompose.router.stack.webhistory.DefaultWebHistoryController
 import com.arkivanov.essenty.lifecycle.LifecycleRegistry
 import com.arkivanov.essenty.lifecycle.resume
-import components.Implementations.RootModelImpl
+import components.root.RootModelImpl
 import ui.RootContentComposable
 import kotlinx.browser.window
 import org.jetbrains.skiko.wasm.onWasmReady

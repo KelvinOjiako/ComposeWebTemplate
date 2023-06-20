@@ -1,3 +1,6 @@
+
+
+
 plugins {
     kotlin("multiplatform")
     id("org.jetbrains.compose")
@@ -24,6 +27,7 @@ kotlin {
 
                 val ktor_version = "2.3.1"
                 implementation("io.ktor:ktor-client-core:$ktor_version")
+
                 implementation("io.ktor:ktor-client-js:$ktor_version")
                 implementation("io.ktor:ktor-client-auth:$ktor_version")
                 implementation("io.ktor:ktor-client-content-negotiation:$ktor_version")

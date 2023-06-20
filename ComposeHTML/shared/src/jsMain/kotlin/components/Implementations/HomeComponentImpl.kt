@@ -1,6 +1,7 @@
 package components.Implementations
 
-import components.interfaces.HomeComponent
 
-class HomeComponentImpl: HomeComponent {
+import components.interfaces.HomeModel
+
+class HomeComponent: HomeModel {
 }
