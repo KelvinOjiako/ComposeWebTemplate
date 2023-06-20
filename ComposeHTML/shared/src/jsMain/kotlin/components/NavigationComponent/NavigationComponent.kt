@@ -2,7 +2,7 @@ package components.NavigationComponent
 
 import com.arkivanov.decompose.router.stack.ChildStack
 import com.arkivanov.decompose.value.Value
-import components.interfaces.RootModel
+import components.root.RootModel
 
 interface NavigationComponent {
     val pagesStack: Value<ChildStack<*, RootModel.Pages>>
