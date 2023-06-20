@@ -6,9 +6,9 @@ import io.ktor.client.request.*
 import io.ktor.client.statement.*
 import io.ktor.http.*
 
-class AuthSetupWorker(val client: HttpClient = HttpClient(Js){ followRedirects = false }) {
+class AuthSetupWorker(val clientID: String, val client: HttpClient = HttpClient(Js){ followRedirects = false }) {
     fun createAuthorizationQuery() =  parameters {
-        append("client_id", "150430991817-cgmmc149b9gu3poc5bgo4q4jrpnigand.apps.googleusercontent.com")
+        append("client_id", clientID)
         append("scope", "https://www.googleapis.com/auth/userinfo.profile")
         append("response_type", "code")
         append("redirect_uri", "http://127.0.0.1:8080")

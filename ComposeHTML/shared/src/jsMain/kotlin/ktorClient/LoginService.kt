@@ -9,15 +9,28 @@ import io.ktor.client.plugins.auth.providers.*
 import io.ktor.client.plugins.contentnegotiation.*
 import io.ktor.client.request.forms.*
 import io.ktor.http.*
-import io.ktor.serialization.kotlinx.json.*
 
 
 class LoginService {
-    private val authWorker = AuthSetupWorker()
+
+    //Step 1 is getting the ClientSecretDetails
+    private val clientSecretDetails = ClientSecretsManager()
+
+    private val clientID = clientSecretDetails.getClientID()
+    private val clientSecret = clientSecretDetails.getClientSecret()
+
+
+
+
+    //Step2 instantiating the OAuthSetupWorker that will get the authorizationLink and get the code
+    private val authWorker = AuthSetupWorker(clientID)
     fun getAuthorizationLink() = authWorker.getAuthorizationLink()
+
+
 
     suspend fun getAuthCode() = authWorker.retrieveAuthorizationCode()
 
+    //Step3: Creating the AuthClient using the authorization code gotten from redirect link
    suspend fun  createAuthClient(authorizationCode: String): HttpClient{
 
         val client = HttpClient(Js){
@@ -54,7 +67,6 @@ class LoginService {
                }
            }
        }
-
 
         return client
     }
