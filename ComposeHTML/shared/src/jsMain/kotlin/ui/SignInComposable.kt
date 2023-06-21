@@ -1,6 +1,7 @@
 package ui
 
 import LoginModel
+import Wrappers.ExpectedImplementations.WindowImplementation
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.ClickableText
@@ -19,6 +20,7 @@ import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.arkivanov.decompose.extensions.compose.jetbrains.subscribeAsState
+import components.AuthenticationComponents.ExternalSignIn
 import ktorClient.LoginService
 
 @Composable
@@ -71,22 +73,11 @@ fun SignInComposable(component: LoginModel, loginService: LoginService ){
                 Text(text = "Login")
             }
         }
-
         val authorizationLink = loginService.getAuthorizationLink()
 
         Spacer(modifier = Modifier.height(20.dp))
-        ClickableText(
-
-            text = AnnotatedString("Login with Google"),
-            onClick = { },
-            style = TextStyle(
-                fontSize = 14.sp,
-                fontFamily = FontFamily.Default
-            )
-        )
-
+        ExternalSignIn(authorizationLink, WindowImplementation())
     }
-
 }
 
 
