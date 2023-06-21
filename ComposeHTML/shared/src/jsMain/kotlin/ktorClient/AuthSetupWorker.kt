@@ -11,7 +11,7 @@ class AuthSetupWorker(val clientID: String, val client: HttpClient = HttpClient(
         append("client_id", clientID)
         append("scope", "https://www.googleapis.com/auth/userinfo.profile")
         append("response_type", "code")
-        append("redirect_uri", "http://127.0.0.1:8080")
+        append("redirect_uri", "http://localhost:8080/callback")
         append("access_type", "offline")
     }.formUrlEncode()
 
