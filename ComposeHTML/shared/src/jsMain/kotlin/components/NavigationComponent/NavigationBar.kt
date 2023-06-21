@@ -10,7 +10,7 @@ import components.root.RootModel
 fun NavigationBar(component: RootModel){
     Row {
         TextButton(onClick = { component.onHomeLinkPressed() }){Text("home") }
-        TextButton(onClick = { component.onSignUpLinkPressed() }){Text("SignUp") }
+        TextButton(onClick = { component.onSignInLinkPressed() }){Text("SignIn") }
         TextButton(onClick = { component.onProfileLinkPressed()  }){Text("profile") }
     }
 }

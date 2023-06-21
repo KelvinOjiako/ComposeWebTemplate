@@ -3,13 +3,16 @@ package ui
 import androidx.compose.foundation.layout.Column
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import com.arkivanov.decompose.ComponentContext
 import com.arkivanov.decompose.extensions.compose.jetbrains.stack.Children
 import com.arkivanov.decompose.extensions.compose.jetbrains.subscribeAsState
+import components.Implementations.LoginComponent
 import components.NavigationComponent.NavigationBar
 import components.root.RootModel
+import ktorClient.LoginService
 
 @Composable
-fun RootContentComposable(rootModel: RootModel){
+fun RootContentComposable(componentContext: ComponentContext, rootModel: RootModel){
 
     val pageStack by rootModel.RootpagesStack.subscribeAsState()
 
@@ -21,7 +24,7 @@ fun RootContentComposable(rootModel: RootModel){
                 is RootModel.Pages.HomePage -> HomeComposable()
                 is RootModel.Pages.IndexPage -> IndexComposable()
                 is RootModel.Pages.ProfilePage -> UserProfile()
-                is RootModel.Pages.SignInPage -> SignInComposable()
+                is RootModel.Pages.SignInPage -> SignInComposable(component = LoginComponent(componentContext), loginService = LoginService())
                 is RootModel.Pages.SignUpPage -> SignUpComposable()
             }
         }

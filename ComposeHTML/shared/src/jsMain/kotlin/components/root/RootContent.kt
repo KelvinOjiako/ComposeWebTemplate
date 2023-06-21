@@ -11,7 +11,7 @@ import com.arkivanov.essenty.parcelable.Parcelize
 import components.Implementations.*
 
 @OptIn(ExperimentalDecomposeApi::class)
-class RootModelImpl(componentContext: ComponentContext,
+class RootContent(componentContext: ComponentContext,
                     deepLink: DeepLink = DeepLink.None,
                     webHistoryController: WebHistoryController? = null) : RootModel, ComponentContext by componentContext {
 
