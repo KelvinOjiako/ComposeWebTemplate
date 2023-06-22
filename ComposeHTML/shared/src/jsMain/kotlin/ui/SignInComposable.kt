@@ -21,10 +21,12 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.arkivanov.decompose.extensions.compose.jetbrains.subscribeAsState
 import components.AuthenticationComponents.ExternalSignIn
+import components.AuthenticationComponents.SignUpRedirect
+import components.root.RootModel
 import ktorClient.LoginService
 
 @Composable
-fun SignInComposable(component: LoginModel, loginService: LoginService ){
+fun SignInComposable(component: LoginModel, loginService: LoginService , rootComponent: RootModel){
 
     //val userDetails by component.loginDetails.subscribeAsState()
     val userDetails = remember { mutableStateOf(component.loginDetails.value) }
@@ -76,7 +78,11 @@ fun SignInComposable(component: LoginModel, loginService: LoginService ){
         val authorizationLink = loginService.getAuthorizationLink()
 
         Spacer(modifier = Modifier.height(20.dp))
-        ExternalSignIn(authorizationLink, WindowImplementation())
+        Row {
+            ExternalSignIn(authorizationLink, WindowImplementation())
+            SignUpRedirect(rootComponent)
+        }
+
     }
 }
 

@@ -7,14 +7,15 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.sp
+import components.root.RootModel
 
 @Composable
-fun ExternalSignIn(url: String, windowObject: WindowInterface){
-    Button(onClick = { windowObject.open(url, "_blank") }) {
-        Text(text = "Sign in with Google",
+fun SignUpRedirect(component: RootModel){
+    Button(onClick = { component.onSignUpLinkPressed()}) {
+        Text(text = "No account? Sign up",
             style = TextStyle(
-            fontSize = 9.sp,
-            fontFamily = FontFamily.Default
+                fontSize = 9.sp,
+                fontFamily = FontFamily.Default
             )
         )
     }
