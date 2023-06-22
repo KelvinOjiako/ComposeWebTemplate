@@ -7,6 +7,7 @@ plugins {
     kotlin("jvm") apply false
     kotlin("multiplatform") apply false
     kotlin("js") apply false
+    id("io.ktor.plugin") apply false
     id("org.jetbrains.compose") apply false
     kotlin("plugin.serialization") apply false
 }
