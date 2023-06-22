@@ -19,6 +19,8 @@ interface RootModel {
 
         data class ProfilePage(val component: ProfileModel) : Pages()
 
+        data class CallBackPage(val component: ProfileModel) : Pages()
+
     }
 
     fun onHomeLinkPressed()

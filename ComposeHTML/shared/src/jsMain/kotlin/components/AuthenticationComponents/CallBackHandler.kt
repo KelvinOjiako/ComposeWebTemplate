@@ -8,9 +8,9 @@ import com.arkivanov.decompose.value.Value
 import components.root.RootModel
 
 @Composable
-fun CallBackHandler(val pageStack:ChildStack<*, RootModel.Pages>){
+fun CallBackHandler(){
     Button(
-        onClick = {pageStack.},
+        onClick = {}
     ){
         Text("Navigate to the HomePage")
     }

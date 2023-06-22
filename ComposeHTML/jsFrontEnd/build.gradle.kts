@@ -30,8 +30,7 @@ compose.experimental {
     web.application {}
 }
 
-afterEvaluate {
-    rootProject.extensions.configure<NodeJsRootExtension> {
-        versions.webpackCli.version = "4.10.0"
-    }
+rootProject.extensions.configure<org.jetbrains.kotlin.gradle.targets.js.nodejs.NodeJsRootExtension> {
+    versions.webpackCli.version = "5.0.0"
 }
+

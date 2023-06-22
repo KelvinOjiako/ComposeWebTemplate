@@ -27,7 +27,7 @@ fun RootContentComposable(componentContext: ComponentContext, rootModel: RootMod
                 is RootModel.Pages.ProfilePage -> UserProfile()
                 is RootModel.Pages.SignInPage -> SignInComposable(component = LoginComponent(componentContext), loginService = LoginService(), rootModel)
                 is RootModel.Pages.SignUpPage -> SignUpComposable()
-                is RootModel.Pages.CallBackPage -> CallBackHandler(rootModel)
+                is RootModel.Pages.CallBackPage -> CallBackHandler()
             }
         }
     }
